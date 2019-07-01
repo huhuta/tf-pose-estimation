@@ -1,7 +1,4 @@
-argparse
 dill
-fire
-matplotlib
 numba
 psutil
 pycocotools
@@ -11,3 +8,4 @@ scipy
 slidingwindow
 tqdm
 git+https://github.com/ppwwyyxx/tensorpack.git
+

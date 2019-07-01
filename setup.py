@@ -12,7 +12,6 @@ import numpy as np
 _VERSION = '0.1.1'
 
 cwd = os.path.dirname(os.path.abspath(__file__))
-subprocess.check_output(["bash", "models/graph/cmu/download.sh"], cwd=cwd)
 
 POSE_DIR = os.path.realpath(os.path.dirname(__file__))
 
@@ -45,8 +44,7 @@ EXT = Extension('_pafprocess',
 setuptools.setup(
     name='tf-pose',
     version=_VERSION,
-    description=
-    'Deep Pose Estimation implemented using Tensorflow with Custom Architectures for fast inference.',
+    description='Deep Pose Estimation implemented using Tensorflow with Custom Architectures for fast inference.',
     install_requires=REQUIRED_PACKAGES,
     dependency_links=DEPENDENCY_LINKS,
     url='https://github.com/ildoonet/tf-pose-estimation/',
@@ -58,8 +56,7 @@ setuptools.setup(
              [pkg_name for pkg_name in setuptools.find_packages()  # main package
               if 'tf_pose' in pkg_name],
     ext_modules=[EXT],
-    package_data={'tf_pose_data': ['graph/cmu/graph_opt.pb',
-                                   'graph/mobilenet_thin/graph_opt.pb']},
+    package_data={'tf_pose_data': ['graph/mobilenet_thin/graph_opt.pb']},
     py_modules=[
         "pafprocess"
     ],
