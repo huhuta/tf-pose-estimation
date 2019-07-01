@@ -16,6 +16,7 @@ cwd = os.path.dirname(os.path.abspath(__file__))
 POSE_DIR = os.path.realpath(os.path.dirname(__file__))
 
 REQUIRED_PACKAGES = [
+    'pycocotools',
     'dill==0.2.7.1',
     'psutil >= 5.4.5',
     'requests >= 2.18.4',
