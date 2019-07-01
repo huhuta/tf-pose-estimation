@@ -16,10 +16,7 @@ cwd = os.path.dirname(os.path.abspath(__file__))
 POSE_DIR = os.path.realpath(os.path.dirname(__file__))
 
 REQUIRED_PACKAGES = [
-    'argparse>=1.1',
     'dill==0.2.7.1',
-    'fire >= 0.1.3',
-    'matplotlib >= 2.2.2',
     'psutil >= 5.4.5',
     'requests >= 2.18.4',
     'scikit-image >= 0.13.1',
