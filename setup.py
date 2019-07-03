@@ -12,6 +12,8 @@ import numpy as np
 _VERSION = '0.1.1'
 
 cwd = os.path.dirname(os.path.abspath(__file__))
+subprocess.check_output(["bash", "models/graph/cmu/download.sh"], cwd=cwd)
+
 
 POSE_DIR = os.path.realpath(os.path.dirname(__file__))
 
